@@ -1,0 +1,108 @@
+# Gerador de Relatório de Disponibilidade Zabbix
+
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+Uma ferramenta de desktop com interface gráfica para gerar relatórios de disponibilidade de ativos monitorados pelo Zabbix. A aplicação se conecta à API do Zabbix, coleta dados de um grupo de hosts específico e gera um relatório profissional em formato PDF.
+
+## Screenshot
+
+![Screenshot da Aplicação](https://i.imgur.com/8Qj9LqY.png)
+
+## Funcionalidades
+
+* **Interface Gráfica Amigável:** Permite que usuários não técnicos gerem relatórios complexos sem precisar mexer em código.
+* **Conexão com Zabbix:** Se conecta a qualquer instância do Zabbix via API para buscar dados em tempo real.
+* **Seleção de Parâmetros:** Permite definir o grupo de hosts e o período (em dias) para a análise.
+* **Geração de PDF Formatado:** Cria um relatório em PDF com layout profissional, incluindo:
+    * Cabeçalho com título e data de geração.
+    * Tabela com os dados de disponibilidade.
+    * Cores condicionais para identificar rapidamente ativos com baixa disponibilidade (verde, amarelo, vermelho).
+    * Paginação automática.
+* **Feedback de Progresso:** Uma caixa de log na interface informa o usuário sobre o andamento do processo.
+* **Multiplataforma:** Por ser feito em Python, pode rodar em Windows, macOS e Linux (com as dependências corretas).
+
+## Tecnologias Utilizadas
+
+* **Python 3.9+**
+* **CustomTkinter:** Para a construção da interface gráfica moderna.
+* **pyzabbix:** Para a comunicação com a API do Zabbix.
+* **Pandas:** Para a manipulação e estruturação dos dados.
+* **WeasyPrint:** Para a conversão do relatório (HTML + CSS) para PDF.
+
+## Pré-requisitos
+
+Antes de começar, garanta que você tem os seguintes pré-requisitos:
+
+1.  **Python 3.9 ou superior** instalado.
+2.  **(Apenas para Windows)** A aplicação requer o **GTK3 Runtime** para que o WeasyPrint possa renderizar os PDFs. Se você não o tiver, a aplicação apresentará um erro.
+    * Faça o download a partir do [instalador oficial do GTK3 para Windows](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases) e siga as instruções de instalação.
+    * **Lembre-se de adicionar o GTK ao PATH do sistema**, como explicado anteriormente.
+
+## Instalação
+
+Siga os passos abaixo para configurar o ambiente e rodar o projeto:
+
+1.  **Clone ou baixe este repositório:**
+    ```bash
+    git clone https://[URL_DO_SEU_REPOSITORIO].git
+    cd [NOME_DA_PASTA_DO_PROJETO]
+    ```
+    Ou simplesmente baixe os arquivos `.py` e `requirements.txt` para a mesma pasta.
+
+2.  **Crie e ative um ambiente virtual (Recomendado):**
+    ```bash
+    # Cria o ambiente virtual
+    python -m venv venv
+
+    # Ativa o ambiente no Windows
+    .\venv\Scripts\activate
+
+    # Ativa o ambiente no Linux/macOS
+    source venv/bin/activate
+    ```
+
+3.  **Instale as dependências Python:**
+    Use o arquivo `requirements.txt` para instalar todas as bibliotecas necessárias de uma só vez.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Como Usar
+
+Com o ambiente configurado, execute o script principal para abrir a interface gráfica:
+
+```bash
+python gerador_relatorio_gui.py
+```
+
+1. Preencha os campos na interface com os dados do seu ambiente Zabbix (URL, usuário, senha).
+2. Informe o nome exato do Grupo de Hosts que deseja analisar.
+3. Defina o período do relatório em dias (o padrão é 30).
+4. Clique no botão "Gerar Relatório PDF".
+5. Uma caixa de diálogo será aberta para você escolher o nome e o local onde deseja salvar o arquivo PDF.
+6. Acompanhe o progresso na caixa de log na parte inferior da janela.
+
+## Estrutura do Projeto
+
+```
+/
+|-- gerador_relatorio_gui.py   # O script principal da aplicação com a GUI
+|-- requirements.txt           # Lista de dependências Python
+|-- README.md                  # Este arquivo
+```
+
+## Possíveis Melhorias
+
+- [ ] Salvar Configurações: Implementar uma forma de salvar os dados do servidor e usuário para não precisar digitá-los a cada uso.
+- [ ] Dropdown de Grupos: Conectar à API para buscar a lista de grupos de hosts disponíveis e exibi-los em um menu dropdown.
+- [ ] Empacotamento: Usar o PyInstaller para criar um executável .exe único, eliminando a necessidade de instalar Python e as dependências em outras máquinas.
+- [ ] Adicionar Logo: Permitir a inclusão do logo da empresa no cabeçalho do relatório PDF.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT.
+
+## Créditos
+
+Desenvolvido por [Seu Nome ou Nome da Equipe]
