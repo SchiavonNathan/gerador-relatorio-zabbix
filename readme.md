@@ -45,8 +45,8 @@ Siga os passos abaixo para configurar o ambiente e rodar o projeto:
 
 1.  **Clone ou baixe este repositório:**
     ```bash
-    git clone https://[URL_DO_SEU_REPOSITORIO].git
-    cd [NOME_DA_PASTA_DO_PROJETO]
+    git clone https://github.com/SchiavonNathan/gerador-relatorio-zabbix.git
+    cd gerador-relatorio-zabbix
     ```
     Ou simplesmente baixe os arquivos `.py` e `requirements.txt` para a mesma pasta.
 
