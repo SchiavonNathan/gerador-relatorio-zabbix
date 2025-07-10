@@ -5,10 +5,6 @@
 
 Uma ferramenta de desktop com interface gráfica para gerar relatórios de disponibilidade de ativos monitorados pelo Zabbix. A aplicação se conecta à API do Zabbix, coleta dados de um grupo de hosts específico e gera um relatório profissional em formato PDF.
 
-## Screenshot
-
-![Screenshot da Aplicação](https://i.imgur.com/8Qj9LqY.png)
-
 ## Funcionalidades
 
 * **Interface Gráfica Amigável:** Permite que usuários não técnicos gerem relatórios complexos sem precisar mexer em código.
