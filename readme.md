@@ -83,15 +83,6 @@ python gerador_relatorio_gui.py
 5. Uma caixa de diálogo será aberta para você escolher o nome e o local onde deseja salvar o arquivo PDF.
 6. Acompanhe o progresso na caixa de log na parte inferior da janela.
 
-## Estrutura do Projeto
-
-```
-/
-|-- gerador_relatorio_gui.py   # O script principal da aplicação com a GUI
-|-- requirements.txt           # Lista de dependências Python
-|-- README.md                  # Este arquivo
-```
-
 Este projeto está licenciado sob a Licença MIT.
 
 ## Créditos
