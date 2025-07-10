@@ -1,0 +1,7 @@
+# requirements.txt
+# Lista de pacotes Python necessários para o Gerador de Relatórios Zabbix
+
+customtkinter==5.2.2
+pandas==2.2.2
+pyzabbix==1.1.8
+weasyprint==62.3
