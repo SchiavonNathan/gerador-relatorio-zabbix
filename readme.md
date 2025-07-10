@@ -92,17 +92,8 @@ python gerador_relatorio_gui.py
 |-- README.md                  # Este arquivo
 ```
 
-## Possíveis Melhorias
-
-- [ ] Salvar Configurações: Implementar uma forma de salvar os dados do servidor e usuário para não precisar digitá-los a cada uso.
-- [ ] Dropdown de Grupos: Conectar à API para buscar a lista de grupos de hosts disponíveis e exibi-los em um menu dropdown.
-- [ ] Empacotamento: Usar o PyInstaller para criar um executável .exe único, eliminando a necessidade de instalar Python e as dependências em outras máquinas.
-- [ ] Adicionar Logo: Permitir a inclusão do logo da empresa no cabeçalho do relatório PDF.
-
-## Licença
-
 Este projeto está licenciado sob a Licença MIT.
 
 ## Créditos
 
-Desenvolvido por [Seu Nome ou Nome da Equipe]
+Desenvolvido por Nathan Schiavon
