@@ -7,7 +7,6 @@ Uma ferramenta de desktop com interface gráfica para gerar relatórios de dispo
 
 ## Funcionalidades
 
-* **Interface Gráfica Amigável:** Permite que usuários não técnicos gerem relatórios complexos sem precisar mexer em código.
 * **Conexão com Zabbix:** Se conecta a qualquer instância do Zabbix via API para buscar dados em tempo real.
 * **Seleção de Parâmetros:** Permite definir o grupo de hosts e o período (em dias) para a análise.
 * **Geração de PDF Formatado:** Cria um relatório em PDF com layout profissional, incluindo:
@@ -15,7 +14,6 @@ Uma ferramenta de desktop com interface gráfica para gerar relatórios de dispo
     * Tabela com os dados de disponibilidade.
     * Cores condicionais para identificar rapidamente ativos com baixa disponibilidade (verde, amarelo, vermelho).
     * Paginação automática.
-* **Feedback de Progresso:** Uma caixa de log na interface informa o usuário sobre o andamento do processo.
 * **Multiplataforma:** Por ser feito em Python, pode rodar em Windows, macOS e Linux (com as dependências corretas).
 
 ## Tecnologias Utilizadas
@@ -69,7 +67,7 @@ Siga os passos abaixo para configurar o ambiente e rodar o projeto:
 Com o ambiente configurado, execute o script principal para abrir a interface gráfica:
 
 ```bash
-python gerador_relatorio_gui.py
+python main.py
 ```
 
 1. Preencha os campos na interface com os dados do seu ambiente Zabbix (URL, usuário, senha).
